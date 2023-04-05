@@ -1,0 +1,15 @@
+{
+    "name": "demoapp.felix",
+    "description": "My new Demo App",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Demo App",
+    "hooks": {
+        "demoapp": {
+            "apparmor": "demoapp.apparmor",
+            "desktop":  "demoapp.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Felix Sander <felix@ut.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

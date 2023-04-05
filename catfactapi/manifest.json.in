@@ -1,0 +1,15 @@
+{
+    "name": "catfactapi.felixterrence",
+    "description": "Doorloop API call catfact",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Demo APICallDoorloop",
+    "hooks": {
+        "catfactapi": {
+            "apparmor": "catfactapi.apparmor",
+            "desktop":  "catfactapi.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Felix Terrence <a@t.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

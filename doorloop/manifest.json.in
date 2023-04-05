@@ -1,0 +1,15 @@
+{
+    "name": "doorloop.dorloop",
+    "description": "doorloop",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Doorloop",
+    "hooks": {
+        "doorloop": {
+            "apparmor": "doorloop.apparmor",
+            "desktop":  "doorloop.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "doorloop <d@l.p>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

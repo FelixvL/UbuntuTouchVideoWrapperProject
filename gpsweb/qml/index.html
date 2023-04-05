@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Dit is een titel</h1>
+        <div>
+            <span>Uw noorderbreedte is:</span>
+            <span id="coordinaatnb"></span>
+        </div>
+        <script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+        <script>
+            new QWebChannel(qt.webChannelTransport, function(channel) {
+                
+                var myObj = channel.objects.hetQtObject;
+                myObj.onRefresh.connect(function(){
+                    document.getElementById("coordinaatnb").innerHTML = "lon: "+myObj.longwv;
+                })
+            })
+        </script>
+    </body>
+</html>

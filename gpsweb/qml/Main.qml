@@ -19,6 +19,9 @@ import Ubuntu.Components 1.3
 //import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import QtPositioning 5.2
+import QtWebEngine 1.6
+import QtWebChannel 1.0
 
 MainView {
     id: root
@@ -37,6 +40,10 @@ MainView {
             title: i18n.tr('DoorloopGPSOpWeb')
         }
 
+        Component.onCompleted:{
+            webkanaal.registerObject("hetQtObject", hetQtObject)
+        }
+
         Label {
             anchors {
                 top: header.bottom
@@ -48,6 +55,39 @@ MainView {
 
             verticalAlignment: Label.AlignVCenter
             horizontalAlignment: Label.AlignHCenter
+        }
+        QtObject{
+            id: hetQtObject
+            property double longwv: gpsposition.position.coordinate.longitude
+            property double latwv: gpsposition.position.coordinate.latitude
+            signal onRefresh()
+            onLongwvChanged:onRefresh()
+            onLatwvChanged:onRefresh()
+        }
+        WebEngineView{
+            url: "index.html"
+            webChannel: webkanaal
+            anchors {
+                fill: parent 
+                topMargin: header.height
+            }
+        }
+        WebChannel{
+            id: webkanaal
+
+
+        }
+        PositionSource{
+            id: gpsposition
+            active: true
+            
+            preferredPositioningMethods: PositionSource.SatellitePositioningMethods
+            updateInterval:1000
+            
+            onPositionChanged:{
+                console.log(gpsposition.position.coordinate.latitude)
+                console.log(gpsposition.position.coordinate.longitude)
+            }
         }
     }
 }

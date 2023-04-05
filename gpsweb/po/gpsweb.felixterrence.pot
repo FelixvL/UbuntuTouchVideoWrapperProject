@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gpsweb.felixterrence\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-05 18:31+0000\n"
+"POT-Creation-Date: 2023-04-05 19:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:37 gpsweb.desktop.in.h:1
+#: ../qml/Main.qml:40 gpsweb.desktop.in.h:1
 msgid "DoorloopGPSOpWeb"
 msgstr ""
 
-#: ../qml/Main.qml:47
+#: ../qml/Main.qml:54
 msgid "Hello World!"
 msgstr ""

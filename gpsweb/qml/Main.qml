@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2023  Felix Sander
+ * Copyright (C) 2023  Felix Terrence
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; version 3.
  *
- * demoapp is distributed in the hope that it will be useful,
+ * gpsweb is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -23,7 +23,7 @@ import Qt.labs.settings 1.0
 MainView {
     id: root
     objectName: 'mainView'
-    applicationName: 'demoapp.felix'
+    applicationName: 'gpsweb.felixterrence'
     automaticOrientation: true
 
     width: units.gu(45)
@@ -34,7 +34,7 @@ MainView {
 
         header: PageHeader {
             id: header
-            title: i18n.tr('Demo App')
+            title: i18n.tr('DoorloopGPSOpWeb')
         }
 
         Label {

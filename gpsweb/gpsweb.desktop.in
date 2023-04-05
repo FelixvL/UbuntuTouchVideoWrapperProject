@@ -1,6 +1,6 @@
 [Desktop Entry]
-_Name=Cpp App
-Exec=cppapp %U
+_Name=DoorloopGPSOpWeb
+Exec=qmlscene %U qml/Main.qml
 Icon=assets/logo.svg
 Terminal=false
 Type=Application

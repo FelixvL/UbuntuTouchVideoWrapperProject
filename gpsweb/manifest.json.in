@@ -1,0 +1,15 @@
+{
+    "name": "gpsweb.felixterrence",
+    "description": "Doorloop GPS Op Web",
+    "architecture": "@CLICK_ARCH@",
+    "title": "DoorloopGPSOpWeb",
+    "hooks": {
+        "gpsweb": {
+            "apparmor": "gpsweb.apparmor",
+            "desktop":  "gpsweb.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Felix Terrence <d@d.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

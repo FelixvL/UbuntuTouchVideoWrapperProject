@@ -19,6 +19,7 @@ import Ubuntu.Components 1.3
 //import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import QtMultimedia 5.11
 
 MainView {
     id: root
@@ -28,7 +29,10 @@ MainView {
 
     width: units.gu(45)
     height: units.gu(75)
-
+    Audio{
+        id: audio
+        source: "Ubuntu.ogg"
+    }
     Page {
         anchors.fill: parent
 
@@ -44,12 +48,21 @@ MainView {
             }
             Button{
                 text:"Play"
+                onClicked:{
+                    audio.play()
+                }
             }
             Button{
                 text:"Pause"
+                onClicked:{
+                    audio.pause()
+                }
             }
             Button{
                 text:"Stop"
+                onClicked:{
+                    audio.stop()
+                }
             }
         }
     }

@@ -29,9 +29,11 @@ MainView {
 
     width: units.gu(45)
     height: units.gu(75)
+    // https://doc.qt.io/qt-5/qml-qtmultimedia-audio.html
     Audio{
         id: audio
-        source: "Ubuntu.ogg"
+        //source: "Ubuntu.ogg"
+        source: "https://icecast.omroep.nl/radio1-bb-mp3"
     }
     Page {
         anchors.fill: parent

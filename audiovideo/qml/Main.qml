@@ -37,17 +37,20 @@ MainView {
             title: i18n.tr('Video Audio')
         }
 
-        Label {
-            anchors {
-                top: header.bottom
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
+        Row{
+            anchors{
+                fill:parent
+                topMargin:header.height
             }
-            text: i18n.tr('Hello World!')
-
-            verticalAlignment: Label.AlignVCenter
-            horizontalAlignment: Label.AlignHCenter
+            Button{
+                text:"Play"
+            }
+            Button{
+                text:"Pause"
+            }
+            Button{
+                text:"Stop"
+            }
         }
     }
 }

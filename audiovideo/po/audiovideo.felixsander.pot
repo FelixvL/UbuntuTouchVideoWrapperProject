@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: audiovideo.felixsander\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 18:08+0000\n"
+"POT-Creation-Date: 2023-04-12 18:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,8 +19,4 @@ msgstr ""
 
 #: ../qml/Main.qml:37 audiovideo.desktop.in.h:1
 msgid "Video Audio"
-msgstr ""
-
-#: ../qml/Main.qml:47
-msgid "Hello World!"
 msgstr ""

@@ -28,7 +28,8 @@ MainView {
 
     width: units.gu(45)
     height: units.gu(75)
-
+    property int aantal : 0
+    property string othercard
     Page {
         anchors.fill: parent
 
@@ -42,12 +43,17 @@ MainView {
             anchors.fill: parent
             columns: 3
             rows: 4
+            
             Card{
-                imagesrc:"images/image_1024.jpeg"                
-//                imagesrc:"images/pexels-simon-berger-698275.jpg"                
+//                imagesrc:"images/image_1024.jpeg"                
+                imagesrc:"images/pexels-simon-berger-698275.jpg"
+                cardnumber : "one" 
+                id:one
             }
             Card{
                 imagesrc:"images/pexels-david-bartus-1166209.jpg"
+                cardnumber : "two"
+                id:two
             }
             Card{
                 imagesrc:"images/pexels-dom-gould-325807.jpg"                
@@ -81,4 +87,17 @@ MainView {
             }
         }
     }
+    function evenAmountClicked(cid){
+        
+        aantal++;
+        if(aantal == 2){
+            aantal = 0
+            return true
+        }else{
+            othercard = cid
+            console.log("cid"+cid);
+            return false
+        }
+    }
+
 }

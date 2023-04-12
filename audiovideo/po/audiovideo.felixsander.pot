@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: audiovideo.felixsander\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 18:19+0000\n"
+"POT-Creation-Date: 2023-04-12 18:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:41 audiovideo.desktop.in.h:1
+#: ../qml/Main.qml:43 audiovideo.desktop.in.h:1
 msgid "Video Audio"
 msgstr ""

@@ -1,7 +1,7 @@
 {
     "policy_groups": [
         "audio",
-        "network"
+        "networking"
     ],
     "policy_version": 16.04
 }

@@ -43,40 +43,41 @@ MainView {
             columns: 3
             rows: 4
             Card{
-                
+                imagesrc:"images/image_1024.jpeg"                
+//                imagesrc:"images/pexels-simon-berger-698275.jpg"                
             }
             Card{
-                
+                imagesrc:"images/pexels-david-bartus-1166209.jpg"
             }
             Card{
-                
+                imagesrc:"images/pexels-dom-gould-325807.jpg"                
             }
             Card{
-                
+                imagesrc:"images/pexels-jaime-reimer-2662116.jpg"                
             }
             Card{
-                
+                imagesrc:"images/pexels-trace-hudson-2535207.jpg"                
             }
             Card{
-                
+                imagesrc:"images/pexels-stein-egil-liland-1933316.jpg"                
             }
             Card{
-
+                imagesrc:"images/pexels-trace-hudson-2535207.jpg"                
             }
             Card{
-                
+                imagesrc:"images/pexels-jaime-reimer-2662116.jpg"                
             }
             Card{
-                
+                imagesrc:"images/pexels-simon-berger-698275.jpg"                
             }
             Card{
-                
+                imagesrc:"images/pexels-dom-gould-325807.jpg"                
+            }
+             Card{
+                imagesrc:"images/pexels-david-bartus-1166209.jpg"
             }
             Card{
-                
-            }
-            Card{
-                
+                imagesrc:"images/pexels-stein-egil-liland-1933316.jpg"                
             }
         }
     }

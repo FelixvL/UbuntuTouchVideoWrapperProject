@@ -1,0 +1,15 @@
+{
+    "name": "audiovideo.felixsander",
+    "description": "Audio explained for Video",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Video Audio",
+    "hooks": {
+        "audiovideo": {
+            "apparmor": "audiovideo.apparmor",
+            "desktop":  "audiovideo.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "FelixSander <f@s.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

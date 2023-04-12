@@ -1,0 +1,15 @@
+{
+    "name": "memoryvideo.memoryvideo",
+    "description": "Memory Made for Video",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Video Memory",
+    "hooks": {
+        "memoryvideo": {
+            "apparmor": "memoryvideo.apparmor",
+            "desktop":  "memoryvideo.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Felix Sander <f@s.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

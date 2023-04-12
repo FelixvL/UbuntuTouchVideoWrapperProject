@@ -35,19 +35,49 @@ MainView {
         header: PageHeader {
             id: header
             title: i18n.tr('Video Memory')
+            visible: false
         }
 
-        Label {
-            anchors {
-                top: header.bottom
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
+        Grid{
+            anchors.fill: parent
+            columns: 3
+            rows: 4
+            Card{
+                
             }
-            text: i18n.tr('Hello World!')
+            Card{
+                
+            }
+            Card{
+                
+            }
+            Card{
+                
+            }
+            Card{
+                
+            }
+            Card{
+                
+            }
+            Card{
 
-            verticalAlignment: Label.AlignVCenter
-            horizontalAlignment: Label.AlignHCenter
+            }
+            Card{
+                
+            }
+            Card{
+                
+            }
+            Card{
+                
+            }
+            Card{
+                
+            }
+            Card{
+                
+            }
         }
     }
 }

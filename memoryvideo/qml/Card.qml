@@ -4,27 +4,30 @@ import Ubuntu.Components 1.3
 import QtQuick.Layouts 1.3
 
 Item{
+    id: card
 
     width: parent.width/3
     height: parent.height/4
     property string imagesrc
     property bool flipped : false
-    property string cardnumber
     
     MouseArea{
         anchors.fill:parent
         
         onClicked:{
-            var evena = evenAmountClicked(cardnumber)
-            console.log(evena)
-            if(evena){
-                flipped=true
-                tijd.start()
-                console.log("wegsturen "+cardnumber)
-                return                    
+            if(root.aantal >= 2) {
+                return
             }
-            flipped=true
-
+            flipped = !flipped
+            if(flipped) {
+                var evena = evenAmountClicked(card)
+                console.log(evena)
+                if(evena){
+                    tijd.start()
+                    console.log("wegsturen "+card.cardnumber)
+                    return                    
+                }
+            }
         }
     }
     Timer{
@@ -32,9 +35,10 @@ Item{
         interval:3000
         running:false
         onTriggered:{
-            console.log("timer voorbij"+cardnumber);
+            console.log("timer voorbij"+card.cardnumber);
             flipped = false
             root.othercard.flipped = false
+            root.aantal = 0
         }
     }
     UbuntuShape{

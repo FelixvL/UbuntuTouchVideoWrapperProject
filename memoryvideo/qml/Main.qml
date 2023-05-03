@@ -29,7 +29,7 @@ MainView {
     width: units.gu(45)
     height: units.gu(75)
     property int aantal : 0
-    property string othercard
+    property Card othercard
     Page {
         anchors.fill: parent
 
@@ -45,59 +45,65 @@ MainView {
             rows: 4
             
             Card{
-//                imagesrc:"images/image_1024.jpeg"                
+                id: one
                 imagesrc:"images/pexels-simon-berger-698275.jpg"
-                cardnumber : "one" 
-                id:one
             }
             Card{
+                id: two
                 imagesrc:"images/pexels-david-bartus-1166209.jpg"
-                cardnumber : "two"
-                id:two
             }
             Card{
-                imagesrc:"images/pexels-dom-gould-325807.jpg"                
+                id: three
+                imagesrc:"images/pexels-dom-gould-325807.jpg"
             }
             Card{
-                imagesrc:"images/pexels-jaime-reimer-2662116.jpg"                
+                id: four
+                imagesrc:"images/pexels-jaime-reimer-2662116.jpg"
             }
             Card{
-                imagesrc:"images/pexels-trace-hudson-2535207.jpg"                
+                id: five
+                imagesrc:"images/pexels-trace-hudson-2535207.jpg"
             }
             Card{
-                imagesrc:"images/pexels-stein-egil-liland-1933316.jpg"                
+                id: six
+                imagesrc:"images/pexels-stein-egil-liland-1933316.jpg"
             }
             Card{
-                imagesrc:"images/pexels-trace-hudson-2535207.jpg"                
+                id: seven
+                imagesrc:"images/pexels-trace-hudson-2535207.jpg"
             }
             Card{
-                imagesrc:"images/pexels-jaime-reimer-2662116.jpg"                
+                id: eight
+                imagesrc:"images/pexels-jaime-reimer-2662116.jpg"
             }
             Card{
-                imagesrc:"images/pexels-simon-berger-698275.jpg"                
+                id: nine
+                imagesrc:"images/pexels-simon-berger-698275.jpg"
             }
             Card{
-                imagesrc:"images/pexels-dom-gould-325807.jpg"                
+                id: ten
+                imagesrc:"images/pexels-dom-gould-325807.jpg"
             }
              Card{
+                id: eleven
                 imagesrc:"images/pexels-david-bartus-1166209.jpg"
             }
             Card{
-                imagesrc:"images/pexels-stein-egil-liland-1933316.jpg"                
+                id: twelve
+                imagesrc:"images/pexels-stein-egil-liland-1933316.jpg"
             }
         }
     }
-    function evenAmountClicked(cid){
+    function evenAmountClicked(card){
         
         aantal++;
-        if(aantal == 2){
-            aantal = 0
-            return true
-        }else{
-            othercard = cid
-            console.log("cid"+cid);
+        console.log(aantal)
+        if(aantal == 1){
+            othercard = card
+            console.log("cid"+card.cardnumber);
             return false
+        }else{
+            return true
         }
     }
-
 }

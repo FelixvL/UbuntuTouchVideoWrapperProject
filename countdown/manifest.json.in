@@ -1,0 +1,15 @@
+{
+    "name": "countdown.videoteam",
+    "description": "CountDown Video App",
+    "architecture": "@CLICK_ARCH@",
+    "title": "CountDown",
+    "hooks": {
+        "countdown": {
+            "apparmor": "countdown.apparmor",
+            "desktop":  "countdown.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Video Team <video@team.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

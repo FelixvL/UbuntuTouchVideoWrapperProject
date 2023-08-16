@@ -1,0 +1,15 @@
+{
+    "name": "audvidrec.sanderfelix",
+    "description": "Audio Video Recording",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Audio VideoRecording",
+    "hooks": {
+        "audvidrec": {
+            "apparmor": "audvidrec.apparmor",
+            "desktop":  "audvidrec.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Sander Felix <s@f.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

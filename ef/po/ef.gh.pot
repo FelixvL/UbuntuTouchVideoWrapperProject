@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the memoryvideo.memoryvideo package.
+# This file is distributed under the same license as the ef.gh package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: memoryvideo.memoryvideo\n"
+"Project-Id-Version: ef.gh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-03 18:29+0000\n"
+"POT-Creation-Date: 2023-05-24 19:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:38 memoryvideo.desktop.in.h:1
-msgid "Video Memory"
+#: ../qml/Main.qml:37 ef.desktop.in.h:1
+msgid "ab"
+msgstr ""
+
+#: ../qml/Main.qml:47
+msgid "Hello World!"
 msgstr ""

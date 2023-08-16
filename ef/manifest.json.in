@@ -1,0 +1,15 @@
+{
+    "name": "ef.gh",
+    "description": "cd",
+    "architecture": "@CLICK_ARCH@",
+    "title": "ab",
+    "hooks": {
+        "ef": {
+            "apparmor": "ef.apparmor",
+            "desktop":  "ef.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "ji <k@l.m>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

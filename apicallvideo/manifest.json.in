@@ -1,0 +1,15 @@
+{
+    "name": "apicallvideo.stf",
+    "description": "Api Call for Video",
+    "architecture": "@CLICK_ARCH@",
+    "title": "API Call Video",
+    "hooks": {
+        "apicallvideo": {
+            "apparmor": "apicallvideo.apparmor",
+            "desktop":  "apicallvideo.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Sander Terrence Felix <s@t.f>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

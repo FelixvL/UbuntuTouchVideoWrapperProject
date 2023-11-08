@@ -1,0 +1,15 @@
+{
+    "name": "videoanchorsgui.videoanchorsgui",
+    "description": "videoanchorsgui",
+    "architecture": "@CLICK_ARCH@",
+    "title": "videoanchorsgui",
+    "hooks": {
+        "videoanchorsgui": {
+            "apparmor": "videoanchorsgui.apparmor",
+            "desktop":  "videoanchorsgui.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "videoanchorsgui <sft@sft.nl>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
